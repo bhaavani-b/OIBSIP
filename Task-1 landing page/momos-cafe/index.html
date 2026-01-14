@@ -1,1 +1,183 @@
-Task 1 - Landing Page Project - momos-cafe
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momos Café</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    /* Header / Banner */
+    header {
+      background: url('images/banner.avif') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      background: rgba(0, 0, 0, 0.55);
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #c0392b;
+    }
+
+    /* Menu Section */
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      padding: 15px;
+      color: #e74c3c;
+    }
+
+    .card p {
+      padding: 0 15px 20px;
+      font-size: 0.95rem;
+    }
+
+    /* Info Sections */
+    .offers, .hours, .contact {
+      background-color: #fff1e6;
+      border-radius: 15px;
+      padding: 40px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .offers p, .hours p, .contact p {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #c0392b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🥟 Momos Café<br>Taste the Steam, Love the Flavor</h1>
+  </header>
+
+  <!-- Menu Section -->
+  <section>
+    <h2>Menu Highlights</h2>
+    <div class="menu">
+
+      <div class="card">
+        <img src="images/steamedmomos.webp" alt="Steamed Momos">
+        <h3>Steamed Momos</h3>
+        <p>Soft and juicy momos served with spicy red chutney.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/friedmomos.webp" alt="Fried Momos">
+        <h3>Fried Momos</h3>
+        <p>Crispy fried momos with garlic mayo dip.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/tandoorimomos.jpg" alt="Tandoori Momos">
+        <h3>Tandoori Momos</h3>
+        <p>Smoky and spicy tandoori momos for true spice lovers.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Offers -->
+  <section class="offers">
+    <h2>Special Offers</h2>
+    <p>🔥 Buy 1 Get 1 Free on Veg Momos (Every Monday)</p>
+    <p>🎓 10% Student Discount Available</p>
+    <p>🥤 Free soft drink on orders above ₹299</p>
+  </section>
+
+  <!-- Opening Hours -->
+  <section class="hours">
+    <h2>Opening Hours</h2>
+    <p>Monday – Friday: 11:00 AM – 10:00 PM</p>
+    <p>Saturday – Sunday: 11:00 AM – 11:00 PM</p>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact & Location</h2>
+    <p>📞 +91 98765 43210</p>
+    <p>📧 momoscafe@gmail.com</p>
+    <p>📍 MG Road, Near City Mall, Bengaluru</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Momos Café | Fresh • Hot • Delicious</p>
+  </footer>
+
+</body>
+</html>
+
+
+
